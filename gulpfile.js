@@ -14,9 +14,7 @@ const styleFiles = [
    './src/css/style.scss',
 ]
 const scriptFiles = [
-   './src/js/wNumb.min.js',
-   './src/js/nouislider.js',
-   './src/js/script.js',
+   './src/js/*.js',   
 ]
 
 gulp.task('styles', () => {
