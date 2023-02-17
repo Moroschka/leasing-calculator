@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Расчет стоимости автомобиля в лизинг</title>
   <link rel="stylesheet" href="build/css/style.min.css">
+  <title>Расчет автомобиля в лизинг</title>
 </head>
 <body class="page">
     <section class="calculator">
@@ -16,17 +16,17 @@
                     <div class="form__inner">
                         <label class="form__label" for="amountCredit">Стоимость автомобиля</label>
                         <div class="form__block">
-                            <input id="amountCredit" name="amountCredit" class="form__input" type="text" value="3300000">
-                            <div class="form__slider slider"></div>
+                            <input id="amountCredit" name="amountCredit" class="form__input form__input--amount" type="text" value="3300000">
+                            <div class="form__slider form__slider--amount slider"></div>
                             <span class="form__unit">₽</span>
                         </div>
                     </div>
                     <div class="form__inner">
                         <label class="form__label" for="initialFee">Первоначальный взнос</label>
-                        <div class="form__block">
-                            <input id="initialFee" class="form__input" name="initialFee" type="text" value="420000">
-                            <div id="initFee" class="form__slider slider"></div>
-                            <span class="form__unit"><span id="percent">10</span> %</span>
+                        <div class="form__block form__block--initial">
+                            <input id="initialFee" class="form__input form__input--init" name="initialFee" type="text" value="420000">
+                            <div id="initFee" class="form__slider form__slider--init slider"></div>
+                            <span class="form__unit form__unit--mark"><span id="percent">10</span> %</span>
                         </div>
                     </div>
                     <div class="form__inner">
@@ -38,19 +38,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="form__grid">
+                <div class="form__grid form__grid--result">
                     <div class="form__inner">
-                        <label class="form__label">Сумма договора лизинга</label>
+                        <label class="form__label form__label--result">Сумма договора лизинга</label>
                         <output id="sum" name="sum" class="form__result">4 467 313</output>
                     </div>
                     <div class="form__inner">
-                        <label class="form__label">Ежемесячный платеж от</label>
+                        <label class="form__label form__label--result">Ежемесячный платеж от</label>
                         <output id="monthlyPayment" name="monthlyPayment" class="form__result">4 467 313</output>
                     </div>
                     <button class="form__btn" type="submit">Оставить заявку</button>
                 </div>
             </form>
         </div>
-    </section>
+    </section>    
 </body>
 </html>
