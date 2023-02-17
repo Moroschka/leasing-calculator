@@ -1,11 +1,14 @@
 # leasing-calculator
 Расчет стоимости автомобиля в лизинг
+
 https://github.com/Moroschka/leasing-calculator
 
 ## Структура файлов и папок:  
 >./src  
->>  /css/*.scss 
+>>  /css/*.scss
+>>
 >>  /fonts
+>>
 >>  /js/*.js
 >>       
 >./gulpfile.js  
